@@ -1,0 +1,100 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  line-height: 1.6;
+  position: relative;
+}
+
+/* Background Image with Dark Overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('image/386640c4-40ad-4aae-a039-78eae158a09f.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -2;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  z-index: -1;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+header h1 {
+  font-size: 36px;
+  font-family: 'Georgia', serif;
+  margin-bottom: 10px;
+  color: #ffd700;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-style: italic;
+  color: #fff;
+}
+
+/* Main Sections */
+.history-section {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #222;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.history-section h2 {
+  color: #b2332a;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.history-section ul {
+  margin-left: 20px;
+}
+
+.history-section li {
+  margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-top: 40px;
+}
